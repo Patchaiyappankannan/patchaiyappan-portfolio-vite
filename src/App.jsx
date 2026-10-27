@@ -43,8 +43,8 @@ function App() {
         <div className="soc"><a href={LI} target="_blank" rel="noopener noreferrer">LinkedIn</a><a href={GH} target="_blank" rel="noopener noreferrer">GitHub</a><a href={"mailto:" + MAIL}>Email</a></div></Rv>
       </div>
       <Rv d={.15}><div className="vis"><div className="glow" aria-hidden="true"/><div className="ph"><span className="ini" aria-hidden="true">PATCHAIYAPPAN K</span><img src={PHOTO} alt="Portrait of Patchaiyappan K" onError={e => e.currentTarget.style.display = "none"} /><span className="availability"><i/>Open to opportunities</span></div>
-        <div className="win w1" aria-hidden="true"><div className="dots"><span/><span/><span/></div><em>function</em> <b>OrderList</b>() {"{"}<br/>&nbsp;&nbsp;<em>const</em> [rows] = <b>useOrders</b>();<br/>&nbsp;&nbsp;<em>return</em> &lt;<b>DataTable</b> rows={"{rows}"} /&gt;;<br/>{"}"}</div>
-        <div className="win w2" aria-hidden="true"><div className="dots"><span/><span/><span/></div>@router.<b>get</b>(<em>"/orders"</em>)<br/><em>async def</em> <b>list_orders</b>(db):<br/>&nbsp;&nbsp;<em>return await</em> db.<b>fetch_all</b>()</div>
+        <div className="win w1" aria-hidden="true"><div className="dots"><span/><span/><span/></div><em>function</em> <b>Developer</b>() {"{"}<br/>&nbsp;&nbsp;<em>const</em> [goals] = <b>useDreams</b>();<br/>&nbsp;&nbsp;<em>return</em> &lt;<b>Success</b> effort={"{goals}"} /&gt;;<br/>{"}"}</div>
+        <div className="win w2" aria-hidden="true"><div className="dots"><span/><span/><span/></div>@router.<b>get</b>(<em>"/future"</em>)<br/><em>async def</em> <b>build_future</b>(db):<br/>&nbsp;&nbsp;<em>return await</em> db.<b>fetch_all</b>()</div>
         <div className="win w3" aria-hidden="true">{["React","Node.js","Python","TypeScript","FastAPI","SQL"].map(x => <span key={x}>{x}</span>)}</div>
       </div></Rv>
     </div></section>

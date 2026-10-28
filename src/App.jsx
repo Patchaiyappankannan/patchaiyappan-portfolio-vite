@@ -76,7 +76,7 @@ function App() {
 
     <section id="projects"><div className="wrap">
       <Rv><div className="label">SELECTED WORK</div><h2>Projects I’ve Worked On</h2></Rv>
-      <div className="grid2">{CARDS.map(([n, name, sub, cat, d, key, my, tech, shots], i) => (
+      <div className="grid2">{CARDS.map(([n, name, sub, cat, d, key, my, tech, shots, liveUrl], i) => (
         <Rv key={n} d={(i % 2) * .1} className="card pc">
           <div className="top"><span className="num">{n}</span><span className="cat">{cat}</span></div>
           <Shots shots={shots} name={name} onOpen={setBox} />
@@ -85,6 +85,7 @@ function App() {
           <div className="k"><b>Key functionality:</b> {key}</div>
           <div className="k"><b>My contribution:</b> {my}</div>
           <Pills list={tech} />
+          {liveUrl && <a className="btn sm" href={liveUrl} target="_blank" rel="noopener noreferrer">Live site ↗</a>}
         </Rv>))}</div>
     </div></section>
 

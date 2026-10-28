@@ -3,7 +3,7 @@ export const PHOTO = import.meta.env.BASE_URL + "profile.jpg";
 export const LI = "https://www.linkedin.com/in/patchaiyappan-kannan-a820581a0";
 export const GH = "https://github.com/Patchaiyappankannan";
 export const MAIL = "patchaiyappan26kannan@gmail.com";
-export const NAV = [["home","Home"],["about","About"],["experience","Experience"],["projects","Projects"],["skills","Skills"],["education","Education"],["contact","Contact"]];
+export const NAV = [["home","Home"],["about","About"],["experience","Experience"],["achievements","Achievements"],["projects","Projects"],["skills","Skills"],["education","Education"],["contact","Contact"]];
 
 export const JOBS = [
  { role:"Software Developer", org:"ASK Technology — Chennai", when:"February 2026 – Present",
@@ -37,12 +37,15 @@ export const CARDS = [
  ["07","FarmGro Eco-Trails","Agri-Tourism Platform","Travel / AgriTech","Responsive agri-tourism platform with simple booking workflows and pages optimized for rural connectivity.","Booking flow, offline-friendly pages","Built the public pages, booking interfaces and FastAPI services.",["HTML","CSS","JavaScript","FastAPI","PostgreSQL"],[["Website","farmgro.png"]],"https://faarmgro.com/"],
  ["08","East Coast Hospital","Hospital Management Platform","Healthcare","Hospital web platform where I implemented patient scheduling and monitoring functionality in the dialysis module.","Patient workflow, scheduling, monitoring, real-time data updates","Implemented the dialysis module's scheduling and monitoring features in React.js.",["React.js"],[["Website","eastcoast-landing.jpg"],["Admin","eastcoast-admin.jpg"]]],
 ];
+export const ACHIEVEMENTS = [
+ { title:"GST e-Invoice and e-Way Bill Integration, HARPA ERP", description:"Integrated GST e-Invoice (IRN and QR code generation) and e-Way Bill APIs into the HARPA web ERP, automating statutory compliance directly from the Sales and Dispatch workflows.", context:"ASK Technology | Production / Client Project", tech:["React.js","Node.js","Express.js","Sequelize","SQL Server","GST e-Invoice API","e-Way Bill API"] },
+];
 export const SKILLS = [
  ["Frontend",["React.js","JavaScript","TypeScript","HTML5","CSS3","Bootstrap","Material UI","Axios"]],
  ["Backend",["Node.js","Express.js","Python","FastAPI"]],
  ["Databases",["SQL Server","PostgreSQL","MySQL","MongoDB"]],
  ["Development tools",["Git","Postman","Visual Studio Code"]],
- ["Engineering",["RESTful APIs","API Integration","Testing & Debugging","Responsive Development","Agile Collaboration"]],
+ ["Engineering",["RESTful APIs","API Integration","GST e-Invoice and e-Way Bill API Integration","Testing & Debugging","Responsive Development","Agile Collaboration"]],
 ];
 export const CORE = ["React.js","React","Node.js","Python","FastAPI","TypeScript","SQL Server"];
 

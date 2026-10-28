@@ -3,7 +3,7 @@ import Reveal from "./components/Reveal";
 import Pills from "./components/Pills";
 import Shots from "./components/Shots";
 import Lightbox from "./components/Lightbox";
-import { LI, GH, MAIL, NAV, JOBS, CARDS, SKILLS, PHOTO, RESUME } from "./data";
+import { LI, GH, MAIL, NAV, JOBS, ACHIEVEMENTS, CARDS, SKILLS, PHOTO, RESUME } from "./data";
 
 const Rv = Reveal;
 
@@ -71,6 +71,16 @@ function App() {
               {p.more && <p style={{ marginTop: 10, marginBottom: 0 }}>{p.more}</p>}
               {p.stack && <div className="stk">{p.stack}</div>}
             </div>))}</div>
+        </Rv>))}</div>
+    </div></section>
+
+    <section id="achievements" style={{ background: "var(--s2)" }}><div className="wrap">
+      <Rv><div className="label">ACHIEVEMENTS</div><h2>Professional Achievements</h2></Rv>
+      <div className="achievement-list">{ACHIEVEMENTS.map((achievement, i) => (
+        <Rv key={achievement.title} d={(i % 2) * .1} className="card achievement-card">
+          <div><h3>{achievement.title}</h3><div className="achievement-context">{achievement.context}</div></div>
+          <p>{achievement.description}</p>
+          <Pills list={achievement.tech} />
         </Rv>))}</div>
     </div></section>
 
